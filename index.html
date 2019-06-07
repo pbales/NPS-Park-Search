@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NPS Park Search</title>
+    <meta name="description" content="This app is used to search for National Parks in a given location.">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Nation Park Search</h1>
+        <form id="js-form">
+          <label for="search-term">Enter one or more state in the US using its two letter abbreviation. Seperate with a comma if searching more than one state.</label>
+          <input type="text" name="search-term" id="js-search-term" required>
+          <label for="max-results">Maximum results to return: </label>
+          <input type="number" name="max-results" id="js-max-results" value="10">
+          <input type="submit" value="Search">
+        </form>
+        <p id="js-error-message" class="error-message"></p>
+        <section class="results hidden">
+          <h2>Results</h2>
+          <ul id="search-results">
+          </ul>
+        </section>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

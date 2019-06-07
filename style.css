@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  ul {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  li {
+    list-style: none;
+    padding-bottom: 30px;
+  }
